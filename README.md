@@ -9,6 +9,7 @@ The idea is that after applying a filter on host/service/hostgroup/servicegroup/
 one can have an additional page where they can choose which columns they want to see in the export.
 
 Here is the standard menu expanded with CSV/JSON Column : 
+(See also doc installation)
 
 ![example_menu_hosts](https://github.com/gbin2265/icingaweb2-module-columnexport/assets/29303758/316a7076-0689-46ee-b012-4d50e57e524a)
 
