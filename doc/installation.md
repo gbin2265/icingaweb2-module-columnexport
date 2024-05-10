@@ -2,17 +2,17 @@ Here are the steps to install the columnsexport module.
 
 1. <b>install the module as one would do for any icingaweb2 module.</b>
 
-2. make a copy of the file to php-icinga2:
+2. <b>make a copy of the file to php-icinga2</b>
 ```
 cp /usr/share/icingaweb2/modules/columnexport/doc/extra/usr/share/php/Icinga/Web/Widget/Tabextension/ColumnExport.php usr/share/php/Icinga/Web/Widget/Tabextension/ColumnExport.php 
 ```
-3. create the config file
+3. <b>create the config file</b>
 
 Create the file : /etc/icingaweb2/module/columnexport/config.ini
 
 See also config.ini file in the doc section.
 
-4. modify the icingaweb2 code to expand the menu.
+4. <b>modify the icingaweb2 code to expand the menu</b>
 
 Edit file /usr/share/icinga-php/ipl/vendor/ipl/web/src/Widget/Tabs.php
 
