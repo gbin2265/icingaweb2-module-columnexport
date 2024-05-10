@@ -1,6 +1,6 @@
 Here are the steps to install the columnsexport module.
 
-1. install the module as one would do for any icingaweb2 module.
+1. <b>install the module as one would do for any icingaweb2 module.</b>
 
 2. make a copy of the file to php-icinga2:
 ```
