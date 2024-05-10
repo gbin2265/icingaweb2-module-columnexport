@@ -1,7 +1,8 @@
 # icingaweb2-module-columnexport
 
 Currently, it is only possible to export CSV/JSON with all columns.
-I have requested an adjustment to make it possible to export only the columns provided in the URL (&columns=...).
+
+I have requested an modification to make it possible to export only the columns provided in the URL (&columns=...).
 
 See : Support ?columns also for CSV and JSON exports  (https://github.com/Icinga/icingadb-web/issues/1011)
 
