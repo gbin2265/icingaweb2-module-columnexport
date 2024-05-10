@@ -23,6 +23,7 @@ Format :
   - 1..20  (max 20 lines)
 
 FILE : /etc/icingaweb2/modules/columnexport/config.ini
+`
 [icingadb/hosts/json/1]
 exportname="JSON Export with name and address"
 exportcolumns="host.name,host.address"
@@ -34,4 +35,4 @@ exportcolumns="host.name,host.address"
 [icingadb/hosts/csv/2]
 exportname="Csv Export with address and displaname"
 exportcolumns="host.address,host.display_name"
-
+`
