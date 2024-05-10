@@ -18,12 +18,12 @@ See also config.ini file in the doc section for more information.
 
 Edit file /usr/share/icinga-php/ipl/vendor/ipl/web/src/Widget/Tabs.php
 
-Add the line : 
+Add the use line : 
 ```
 use Icinga\Web\Widget\Tabextension\ColumnExport;
 ```
 
-Add the line  ->extend(new ColumnExport())
+Add the line in the function assemble ->extend(new ColumnExport())
 ```
     protected function assemble()
     {
