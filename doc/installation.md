@@ -23,7 +23,9 @@ Add the use line :
 use Icinga\Web\Widget\Tabextension\ColumnExport;
 ```
 
-Add the line in the function assemble ->extend(new ColumnExport())
+Add the line in the function assemble
+
+->extend(new ColumnExport())
 ```
     protected function assemble()
     {
