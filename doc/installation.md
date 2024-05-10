@@ -6,7 +6,11 @@ Here are the steps to install the columnsexport module.
 ```
 cp /usr/share/icingaweb2/modules/columnexport/doc/extra/usr/share/php/Icinga/Web/Widget/Tabextension/ColumnExport.php usr/share/php/Icinga/Web/Widget/Tabextension/ColumnExport.php 
 ```
-3. modify the icingaweb2 code to expand the menu.
+3. create the config file
+
+Create the file : /etc/icingaweb2/module/columnexport/config.ini
+
+4. modify the icingaweb2 code to expand the menu.
 
 Edit file /usr/share/icinga-php/ipl/vendor/ipl/web/src/Widget/Tabs.php
 
