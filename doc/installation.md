@@ -12,7 +12,7 @@ cp /usr/share/icingaweb2/modules/columnexport/doc/extra/usr/share/php/Icinga/Web
 
 Create the file : /etc/icingaweb2/module/columnexport/config.ini
 
-See also config.ini file in the doc section.
+See also config.ini file in the doc section for more information.
 
 4. <b>modify the icingaweb2 code to expand the menu</b>
 
