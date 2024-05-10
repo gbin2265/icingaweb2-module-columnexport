@@ -17,6 +17,7 @@ If you choose CSV.JSON, you'll be directed to a new page with the suggested expo
 ![example_csv_hosts](https://github.com/gbin2265/icingaweb2-module-columnexport/assets/29303758/a34853cd-a6ee-4e3e-8b2c-7066b25611fa)
 
 You can configure the list of exports yourself in the config file.
+
 Format :
   - icingadb/hosts , icingadb/services , icingadb/hostgroups , icingadb/servicegroups ...
   - csv or json
