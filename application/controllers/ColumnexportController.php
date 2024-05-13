@@ -14,12 +14,20 @@ class ColumnexportController extends Controller
    public function columnexportAction()
     {  
 
+           /**
+           Init config file read
+           **/
            $config = $this->Config();
 
+
+           /**
+           Get Parameters URL
+           **/
            $param_url_base = Url::fromRequest()->getBasePath();
            $param_url_without = Url::fromRequest()->getParams()->without('columns')->without('pagetype')->without('exportformat')->toString();
            $param_pagetype = $this->params->get('pagetype');
            $param_exportformat = $this->params->get('exportformat');
+
 
            /**
            Create Page info
@@ -29,6 +37,7 @@ class ColumnexportController extends Controller
            $headertext = Html::tag('h2', Html::tag('u',t('List of Exports')));
            $div->add($headertext);
            $this->addContent($div);
+
 
            /**
            Add Export Lines
