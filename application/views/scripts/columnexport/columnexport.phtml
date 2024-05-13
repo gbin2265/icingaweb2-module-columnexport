@@ -1,10 +1,3 @@
 <div class="controls">
-<h1><?= $this->headerpagetype ?></h1>
-<h2>Format Export : <?= $this->headerexportformat ?></h2>
-</div>
-
-<div class="content">
-  <?php foreach ($this->exportlinesarray as $index => $item): ?>
-        <li><a href="<?= $item['exporturl'] ?>" target="_blank"><i  aria-hidden="true" class="<?= $item['exportclass'] ?>"></i><?= $item['exportname'] ?> (columns = <?= $item['exportcolumns'] ?>)<span class="info-box display-on-hover"> opens in new window </span></a></li>
-  <?php endforeach ?>
+<?= $tabs; ?>
 </div>
