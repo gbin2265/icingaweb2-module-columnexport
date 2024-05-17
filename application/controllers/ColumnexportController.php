@@ -1,5 +1,7 @@
 <?php
 
+/** ColumnExport v1.0 **/
+
 namespace Icinga\Module\Columnexport\Controllers;
 
 use Icinga\Module\Icingadb\Web\Controller;

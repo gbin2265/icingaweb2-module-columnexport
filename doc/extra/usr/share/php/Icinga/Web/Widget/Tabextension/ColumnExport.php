@@ -1,5 +1,6 @@
 <?php
-/* Icinga Web 2 | (c) 2013 Icinga Development Team | GPLv2+ */
+
+/** ColumnExport v1.0 **/
 
 namespace Icinga\Web\Widget\Tabextension;
 
@@ -9,16 +10,8 @@ use Icinga\Web\Url;
 use Icinga\Web\Widget\Tab;
 use Icinga\Web\Widget\Tabs;
 
-/**
- * Tabextension that offers different output formats for the user in the dropdown area
- */
 class ColumnExport implements Tabextension
 {
-    /**
-     * JSON output type
-     */
-    const TYPE_JSON = 'json';
-
     /**
      * CSV output type
      */
