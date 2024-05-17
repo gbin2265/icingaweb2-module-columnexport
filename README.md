@@ -14,10 +14,10 @@ Here is the standard menu expanded with CSV/JSON Column :
 
 ![example_menu_hosts](https://github.com/gbin2265/icingaweb2-module-columnexport/assets/29303758/58a85b35-8141-4a20-a4ea-c75df96eb296)
 
+If you choose 'Column Export', you'll be directed to a new page with the suggested exports.: 
 
-If you choose CSV.JSON, you'll be directed to a new page with the suggested exports.: 
+![example_csv_hosts](https://github.com/gbin2265/icingaweb2-module-columnexport/assets/29303758/20139be0-6cd4-4cbf-bdcb-d7b35dad4e60)
 
-![example_csv_hosts](https://github.com/gbin2265/icingaweb2-module-columnexport/assets/29303758/a34853cd-a6ee-4e3e-8b2c-7066b25611fa)
 
 You can configure the list of exports yourself in the config file.
 
