@@ -43,7 +43,7 @@ class ColumnExport implements Tabextension
     {
         foreach ($this->getSupportedTypes() as $type => $tabConfig) {
             if (!in_array($type, $disabled)) {
-                $tabConfig['url'] = Url::fromRequest()->getBasePath() . '/columnexport/columnexport/columnexport?' . Url::fromRequest()->getParams() . '&pagetype=' . Url::fromRequest()->getPath();
+                $tabConfig['url'] = Url::fromRequest()->getBasePath() . '/columnexport/columnexport/columnexport?' . Url::fromRequest()->getParams();
                 $tab = new Tab($tabConfig);
                 $tab->setBaseTarget('_next');
                 $this->tabs[] = $tab;
@@ -78,20 +78,11 @@ class ColumnExport implements Tabextension
         $supportedTypes = array();
 
         $supportedTypes[self::TYPE_CSV] = array(
-            'name'      => 'Column csv export',
-            'label'     => 'CSV (Column)',
-            'icon'      => 'file-excel',
-            'urlParams' => array('exportformat' => 'csv')
+            'name'      => 'Column Export',
+            'label'     => 'Column Export',
+            'icon'      => 'download',
+            'urlParams' => array('pagetype' => Url::fromRequest()->getPath())
         );
-
-        if (Platform::extensionLoaded('json')) {
-            $supportedTypes[self::TYPE_JSON] = array(
-                'name'      => 'Column json export',
-                'label'     => 'JSON (Column)',
-                'icon'      => 'doc-text',
-                'urlParams' => array('exportformat' => 'json')
-            );
-        }
 
         return $supportedTypes;
     }

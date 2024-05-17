@@ -62,12 +62,12 @@ class ColumnexportController extends Controller
          $this->param_url_base = Url::fromRequest()->getBasePath();
          $this->param_url_without_columns = Url::fromRequest()->getParams()->without('columns')->without('pagetype')->toString();
          $this->param_url_with_columns = Url::fromRequest()->getParams()->without('pagetype')->toString();
-         $this->param_url_pagetype = $this->params->get('pagetype');
+         $this->param_url_pagetype = strtolower($this->params->get('pagetype'));
 
          /**
          Create Page
          **/
-         $this->addTitleTab(t($this->param_url_pagetype));
+         $this->addTitleTab(t('Export ' . $this->param_url_pagetype));
 
          $this->readColumnExportIniFile ( $this->param_url_pagetype );
 
@@ -91,12 +91,12 @@ class ColumnexportController extends Controller
     
          /** Read every key form config.ini where urltype is ... **/ 
          foreach ($config as $key => $part) {
-            $ini_urltype = $part->get('urltype');
+            $ini_urltype = strtolower($part->get('urltype'));
             if ( $filter_urltype === $ini_urltype ) { 
                $config_ini = [
                                'config_ini_title' => $part->get('title'),
                                'config_ini_urltype' => $ini_urltype,
-                               'config_ini_exporttype' => $part->get('exporttype'),
+                               'config_ini_exporttype' => strtolower($part->get('exporttype')),
                                'config_ini_columns' => $part->get('columns')
                               ];
                array_push($this->columnexport_config_ini , $config_ini );
@@ -109,7 +109,8 @@ class ColumnexportController extends Controller
      * Create Html Page
      *
    **/
-     protected function createColumnExportHtml ( $TypeColumnExport ) {
+     protected function createColumnExportHtml ( $TypeColumnExport )
+     {
 
            /** Header for Type Export **/
            $div = Html::tag('div',['class'=>"content"]);
@@ -139,7 +140,7 @@ class ColumnexportController extends Controller
                         $ini_title = $item['config_ini_title'];
                         $ini_columns = $item['config_ini_columns'];
                         if ( ! empty($ini_columns) ) {
-                             $columnexport_content = $ini_title . ' (columns =' . $ini_columns . ')';
+                             $columnexport_content = $ini_title . ' (columns=' . $ini_columns . ')';
                              $columnexport_url = $this->param_url_base . '/' . $this->param_url_pagetype . '?' . $this->param_url_without_columns . '&columns=' . $ini_columns . '&format=' . $TypeColumnExport;
                         }
                         else {
@@ -154,4 +155,3 @@ class ColumnexportController extends Controller
      }
 
 }
-
