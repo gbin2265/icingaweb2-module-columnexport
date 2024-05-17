@@ -7,7 +7,7 @@ I have requested an modification to make it possible to export only the columns 
 See : Support ?columns also for CSV and JSON exports  (https://github.com/Icinga/icingadb-web/issues/1011)
 
 The idea is that after applying a filter on host/service/hostgroup/servicegroup/..., 
-one can have an additional page where they can choose which columns they want to see in the export.
+that you will be redirected to another page where you can choose which columns you want to include in an export.
 
 Here is the standard menu expanded with CSV/JSON Column : 
 (See also doc installation)
