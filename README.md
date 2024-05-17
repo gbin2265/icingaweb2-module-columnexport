@@ -21,22 +21,51 @@ If you choose 'Column Export', you'll be directed to a new page with the suggest
 
 You can configure the list of exports yourself in the config file.
 
-Format :
-  - icingadb/hosts , icingadb/services , icingadb/hostgroups , icingadb/servicegroups ...
-  - csv or json
-  - 1..20  (max 20 lines)
-
 FILE : /etc/icingaweb2/modules/columnexport/config.ini
 ```
-[icingadb/hosts/json/1]
-exportname="JSON Export with name and address"
-exportcolumns="host.name,host.address"
-
 [icingadb/hosts/csv/1]
-exportname="Csv Export with name and address"
-exportcolumns="host.name,host.address"
+title="Csv Export with host.name"
+columns="host.name"
+exporttype="csv"
+urltype="icingadb/hosts"
 
 [icingadb/hosts/csv/2]
-exportname="Csv Export with address and displaname"
-exportcolumns="host.address,host.display_name"
+title="Csv Export with address/displaname"
+columns="host.address,host.display_name"
+exporttype="csv"
+urltype="icingadb/hosts"
+
+[icingadb/hosts/json/1]
+title="JSON Export with name/address"
+columns="host.name,host.address"
+exporttype="json"
+urltype="icingadb/hosts"
+
+[icingadb/hosts/sql]
+title="SQL"
+exporttype="sql"
+urltype="icingadb/hosts"
+
+[icingadb/hosts/pdf]
+title="PDF"
+exporttype="pdf"
+columns="host.address,host.display_name"
+urltype="icingadb/hosts"
+
+[icingadb/services/sql]
+title="SQL"
+exporttype="sql"
+urltype="icingadb/services"
+
+[icingadb/hostgroups/sql]
+title="SQL"
+exporttype="sql"
+urltype="icingadb/hostgroups"
+
+[icingadb/servicegroups/sql]
+title="SQL"
+exporttype="sql"
+urltype="icingadb/servicegroups"
+
+....
 ```
