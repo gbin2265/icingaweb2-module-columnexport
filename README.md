@@ -12,7 +12,8 @@ one can have an additional page where they can choose which columns they want to
 Here is the standard menu expanded with CSV/JSON Column : 
 (See also doc installation)
 
-![example_menu_hosts](https://github.com/gbin2265/icingaweb2-module-columnexport/assets/29303758/316a7076-0689-46ee-b012-4d50e57e524a)
+![example_menu_hosts](https://github.com/gbin2265/icingaweb2-module-columnexport/assets/29303758/58a85b35-8141-4a20-a4ea-c75df96eb296)
+
 
 If you choose CSV.JSON, you'll be directed to a new page with the suggested exports.: 
 
