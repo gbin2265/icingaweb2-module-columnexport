@@ -69,3 +69,5 @@ urltype="icingadb/servicegroups"
 
 ....
 ```
+
+See more in the installation document.
